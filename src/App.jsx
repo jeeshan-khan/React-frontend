@@ -1,6 +1,7 @@
 // The exported code uses Tailwind CSS. Install Tailwind CSS in your dev environment to ensure all styles work.
 import React, { useState, useRef, useEffect } from 'react';
 
+
 const App = () => {
 const [messages, setMessages] = useState([
 {
@@ -142,6 +143,7 @@ onKeyPress={(e) => e.key === 'Enter' && handleSendMessage()}
 placeholder="Type your message here..."
 className="flex-1 border border-gray-300 rounded-l-full py-3 px-6 focus:outline-none focus:ring-2 focus:ring-amber-500 focus:border-transparent text-sm bg-white"
 />
+
 <button
 onClick={handleSendMessage}
 className="!rounded-button whitespace-nowrap bg-amber-600 text-white px-6 rounded-r-full cursor-pointer hover:bg-amber-700 transition-colors"
